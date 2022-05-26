@@ -5,7 +5,7 @@ if (process.env.NODE_ENV !== "production") {             //Load GLV from .env if
 }
 const { errorHandler } = require('./middleware/errorMiddleware'); 
 const connectDB = require('./config/db');                         
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 connectDB();
 const app = express();
