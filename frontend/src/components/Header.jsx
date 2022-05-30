@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { logout, reset } from '../features/auth/authSlice';
 
 function Header() {
+    console.log('Header function')
     const navigate = useNavigate(); 
     const dispatch = useDispatch(); 
     const { user } = useSelector((state) => state.auth);
@@ -12,6 +13,7 @@ function Header() {
         dispatch(logout());
         dispatch(reset());
         navigate('/');
+        console.log('const logout triggered')
     }
 
   return (

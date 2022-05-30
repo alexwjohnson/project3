@@ -23,6 +23,7 @@ function Login() {
       toast.error(message);
     }
     if(isSuccess || isError) {
+      // navigate('/login');
       navigate('/');
     }
     dispatch(reset());

@@ -15,16 +15,17 @@ const getBugs = asyncHandler(async (req,res) => {
 //@access   Private
 const createBug = asyncHandler(async (req,res) => {
     //TO DO 
-    console.log(req.body.description);
-    console.log(req.body.state);
-    console.log(req.body.priority);
+    // console.log('description...', req.body.description);
+    // console.log('state', req.body.bugState);
+    // console.log('priority', req.body.priority);
     if (!req.body.description) {     //TO DO
         res.status(400)
         throw new Error('fields missing');
     }
     const bug = await Bug.create({
         description: req.body.description,
-        state: req.body.state, 
+        state: 'New', 
+        // state: req.body.bugState,
         priority: req.body.priority,
         user: req.user.id
     })
