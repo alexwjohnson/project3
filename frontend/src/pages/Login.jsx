@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import {  FaSignInAlt } from 'react-icons/fa';
+import { FaSignInAlt } from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -84,6 +84,10 @@ function Login() {
                 <button type="submit" className="btn btn-block">
                   Submit
                 </button>
+              </div>
+              <div>
+                <img src={require('../images/frame_of_insects.jpg')} 
+                className='bugz' alt='bugz' width = "300" height = "300"/>
               </div>
             </form>
         </section>

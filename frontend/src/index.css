@@ -87,20 +87,20 @@ h3 {
   color: #828282;
 }
 
-.goals {
+.bugs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
-.goal {
+.bug {
   background-color: #f4f4f4;
   margin: 10px 0;
   padding: 20px 0 10px;
   position: relative;
 }
 
-.goal .close {
+.bug .close {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -169,6 +169,17 @@ h3 {
 .btn:hover {
   transform: scale(0.98);
 }
+
+.bugz {
+  /* position: fixed;
+  */ 
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .loadingSpinnerContainer {
   position: fixed;
