@@ -24,7 +24,7 @@ function Login() {
     }
     if(isSuccess || isError) {
       // navigate('/login');
-      navigate('/');
+      navigate('/'); //
     }
     dispatch(reset());
 }, [ user, isSuccess, isError, message, navigate, dispatch ])
